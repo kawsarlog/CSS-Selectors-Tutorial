@@ -6,7 +6,7 @@ This repository contains a collection of HTML and CSS files demonstrating variou
 
 ## Website
 
-You can also access a live version of these examples on the [CSS Selectors Tutorial website](www.cssselectors.xyz/). The website provides an interactive environment where you can try out the examples and experiment with CSS selectors using the browser's developer tools.
+You can also access a live version of these examples on the [CSS Selectors Tutorial website]([www.cssselectors.xyz/]). The website provides an interactive environment where you can try out the examples and experiment with CSS selectors using the browser's developer tools.
 
 
 ## License
