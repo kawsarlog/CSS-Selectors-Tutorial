@@ -1,0 +1,149 @@
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+a {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* Paragraph Styling */
+p {
+  line-height: 1.5;
+}
+
+/* List Styling */
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Code Styling */
+code {
+    background-color: #000000;
+    padding: 2px 4px;
+    font-family: Consolas, monospace;
+    color: aliceblue;
+  }
+
+/* Link Styling */
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  z-index: 9999;
+  background: transparent url('cursor.svg') center/cover no-repeat;
+  cursor: none;
+}
+
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* footer */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #888;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.contact-info li {
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #0056b3;
+}
+
+.contact-info .linkedin-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-info .email-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-info .linkedin-icon svg,
+.contact-info .email-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #007bff;
+}
+
+
+body {
+  cursor: none;
+}
