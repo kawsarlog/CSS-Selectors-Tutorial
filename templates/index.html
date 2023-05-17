@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors Tutorial</title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='style.css')}}">
+</head>
+<body>
+  <div id="custom-cursor"></div>
+  <div class="container">
+    <div id="hyperlink-page-container"></div>
+  <h1>CSS Selectors Tutorial</h1>
+  <h2>Introduction</h2>
+  <p>
+    CSS selectors are powerful tools that allow you to target and style specific elements on a web page.
+    This tutorial will provide an overview of different CSS selector rules and their usage.
+  </p>
+
+  <h2>Selector Rules</h2>
+  <ul>
+    <li>
+      <a href="{{ url_for('type_selector') }}" target="_blank"><strong>Type Selector(Tag):</strong></a>
+      <p>The type selector matches all elements of a given type (e.g. <code>p</code> for paragraphs, <code>h1</code> for headings).</p>
+      <p>Example: <code>p</code> selects all paragraphs on the page.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('class_selector') }}" target="_blank"><strong>Class Selector(.):</strong></a>
+      <p>The class selector matches all elements with a specified class attribute.</p>
+      <p>Example: <code>.example-class</code> selects all elements with <code>class="example-class"</code>.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('id_selector') }}" target="_blank"><strong>ID Selector(#):</strong></a>
+      <p>The ID selector matches the element with the specified ID attribute.</p>
+      <p>Example: <code>#example-id</code> selects the element with <code>id="example-id"</code>.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('attribute_selector') }}" target="_blank"><strong>Attribute Selector:</strong></a>
+      <p>The attribute selector matches elements with a specified attribute and value.</p>
+      <p>Example: <code>[href="https://example.com"]</code> selects all elements with <code>href="https://example.com"</code>.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('selector_list') }}" target="_blank"><strong>Selector List:</strong></a>
+      <p>A selector list allows you to apply styles to multiple selectors at once by separating them with commas.</p>
+      <p>Example: <code>h1, h2, h3</code> selects all <code>h1</code>, <code>h2</code>, and <code>h3</code> elements on the page.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('descendant_combinator') }}" target="_blank"><strong>Descendant Combinator:</strong></a>
+      <p>The descendant combinator (space) selects all elements that are descendants of a specified parent element.</p>
+      <p>Example: <code>ul li</code> selects all <code>li</code> elements that are descendants of <code>ul</code> elements on the page.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('child_combinator') }}" target="_blank"><strong>Child Combinator:</strong></a>
+      <p>The child combinator (>)
+      <strong>Child Combinator:</strong>
+      <p>The child combinator (>) selects all elements that are direct children of a specified parent element.</p>
+      <p>Example: <code>ul > li</code> selects all <code>li</code> elements that are direct children of <code>ul</code> elements on the page.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('general_sibling_combinator') }}" target="_blank"><strong>General Sibling Combinator:</strong></a>
+      <p>The general sibling combinator (~) selects all elements that are siblings of a specified element and appear after it.</p>
+      <p>Example: <code>h1 ~ p</code> selects all <code>p</code> elements that are siblings of <code>h1</code> elements and appear after them on the page.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('adjacent_sibling_combinator') }}" target="_blank"><strong>Adjacent Sibling Combinator:</strong></a>
+      <p>The adjacent sibling combinator (+) selects the element that is the next sibling of a specified element.</p>
+      <p>Example: <code>h1 + p</code> selects the <code>p</code> element that is the immediate sibling of <code>h1</code> elements on the page.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('pseudo_classes') }}" target="_blank"><strong>Pseudo Classes:</strong></a>
+      <p>Pseudo-classes are used to select elements based on a certain state or condition.</p>
+      <p>Example: <code>a:hover</code> selects the <code>a</code> element when it is being hovered over by the mouse cursor.</p>
+    </li>
+    <li>
+      <a href="{{ url_for('pseudo_elements') }}" target="_blank"><strong>Pseudo Elements:</strong></a>
+      <p>Pseudo-elements are used to style a specific part of an element's content.</p>
+      <p>Example: <code>p::first-line</code> selects the first line of text within <code>p</code> elements.</p>
+    </li>
+  </ul>
+  <h1 style="color:brown">Some Addtional Rules</h1>
+    <ul>
+      <li>
+        <a href="{{ url_for('containing_text_of_a_attribute') }}" target="_blank"><strong>Containing Text of an Attribute(*):</strong></a>
+        <p>The attribute contains selector (<code>*=</code>) selects elements whose specified attribute contains a certain text.</p>
+        <p>Example: <code>input[id*='er-messa']</code> selects all <code>input</code> elements whose <code>id</code> attribute contains the text 'er-messa'.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('starting_text_of_a_attribute') }}" target="_blank"><strong>Starting Text of an Attribute(^):</strong></a>
+        <p>The attribute starts with selector (<code>^=</code>) selects elements whose specified attribute starts with a certain text.</p>
+        <p>Example: <code>input[id^='user']</code> selects all <code>input</code> elements whose <code>id</code> attribute starts with the text 'user'.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('ending_text_of_a_attribute') }}" target="_blank"><strong>Ending Text of an Attribute($):</strong></a>
+        <p>The attribute ends with selector (<code>$=</code>) selects elements whose specified attribute ends with a certain text.</p>
+        <p>Example: <code>input[id$='message']</code> selects all <code>input</code> elements whose <code>id</code> attribute ends with the text 'message'.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('or_') }}" target="_blank"><strong>Comma Operator to Implement OR Operation(,):</strong></a>
+        <p>The comma operator (<code>,</code>) allows you to select multiple selectors and apply styles to elements that match any of the selectors.</p>
+        <p>Example: <code>p.red, p.blue</code> selects all <code>p</code> elements with either the class <code>red</code> or the class <code>blue</code>.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('not_') }}" target="_blank"><strong>Not Selector:</strong></a>
+        <p>The not selector (<code>:not()</code>) selects elements that do not match a specified selector.</p>
+        <p>Example: <code>p:not(.special)</code> selects all <code>p</code> elements that do not have the class <code>special</code>.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('has_selector') }}" target="_blank"><strong>Has Selector:</strong></a>
+        <p>The has selector (<code>:has()</code>) selects elements that contain elements matching a specified selector.</p>
+        <p>Example: <code>div:has(p)</code> selects all <code>div</code> elements that contain <code>p</code> elements.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('first_of_type_selector') }}" target="_blank"><strong>:first-of-type Selector:</strong></a>
+        <p>The <code>:first-of-type</code> selector selects the first element of its type among its siblings.</p>
+        <p>Example: <code>p:first-of-type</code> selects the first <code>p</code> element among its sibling elements.</p>
+      </li>
+
+      <li>
+        <a href="{{ url_for('last_of_type_selector') }}" target="_blank"><strong>:last-of-type Selector:</strong></a>
+        <p>The <code>:last-of-type</code> selector selects the last element of its type among its siblings.</p>
+        <p>Example: <code>p:last-of-type</code> selects the last <code>p</code> element among its sibling elements.</p>
+      </li>
+
+      <li>
+        <a href="{{ url_for('nth_last_of_type_selector') }}" target="_blank"><strong>:nth-last-of-type(n) Selector:</strong></a>
+        <p>The <code>:nth-last-of-type(n)</code> selector selects the nth element of its type among its siblings, counting from the last element.</p>
+        <p>Example: <code>p:nth-last-of-type(2)</code> selects the second-to-last <code>p</code> element among its sibling elements.</p>
+      </li>
+
+      <li>
+        <a href="{{ url_for('nth_of_type_n_selector') }}" target="_blank"><strong>:nth-of-type(n) Selector:</strong></a>
+        <p>The <code>:nth-of-type(n)</code> selector selects the nth element of its type among its siblings.</p>
+        <p>Example: <code>p:nth-of-type(3)</code> selects the third <code>p</code> element among its sibling elements.</p>
+      </li>
+
+      <li>
+        <a href="{{ url_for('nth_child_n_selector') }}" target="_blank"><strong>:nth-child(n) Selector:</strong></a>
+        <p>The <code>:nth-child(n)</code> selector selects the nth child element among its siblings, regardless of the element type.</p>
+        <p>Example: <code>div:nth-child(odd)</code> selects odd-numbered <code>div</code> elements among its sibling elements.</p>
+      </li>
+    </ul>
+    <div>
+      <a href="{{ url_for('practice1') }}" target="_blank"><strong>Example Page 1</strong></a> <br>
+      <a href="{{ url_for('practice2') }}" target="_blank"><strong>Example Page 2</strong></a>
+    </div>
+  </div>
+
+  <h2>Instructions</h2>
+  <p>
+    To get started, click on the respective links next to each selector rule to learn more about their usage.
+    Feel free to explore the examples and experiment with different selector rules using your browser's developer tools.
+  </p>
+  <footer>
+    <p>&copy; 2023 Kawsar Log. All rights reserved.</p>
+    <div class="contact-info">
+      <p>Contact me:</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/kawsarlog" target="_blank">My LinkedIn Profile</a></li>
+        <li>Email: kawsar@kawsarlog.com</li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <script src="{{url_for('static', filename='index.js')}}"></script>
+</body>
+</html>
