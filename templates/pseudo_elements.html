@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pseudo-elements Examples</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+    
+    /* Styling for the example paragraph */
+    .example-paragraph {
+      position: relative;
+    }
+    
+    /* Styling for the ::first-line pseudo-element */
+    .example-paragraph::first-line {
+      font-weight: bold;
+      font-size: 20px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo-elements Examples</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example: Styling the first line of a paragraph</h2>
+    <p class="example-description">This example selects and applies styles to the first line of text within <code>p</code> elements.</p>
+    <p class="example-paragraph">This is the first line of text within a paragraph. The rest of the text flows normally.</p>
+  </div>
+  
+</body>
+</html>

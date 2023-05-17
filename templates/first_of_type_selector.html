@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>:first-of-type Selector Example</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+    
+    /* Styling for the example elements */
+    p {
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    
+    /* Styling for the first-of-type element */
+    .example p:first-of-type:not([class="example-description"]) {
+      background-color: #d82121;
+    }
+  </style>
+</head>
+<body>
+  <h1>:first-of-type Selector Example</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example: Selecting the first <code>&lt;p&gt;</code> element using the :first-of-type selector</h2>
+    <p class="example-description">This example selects and applies styles to the first <code>&lt;p&gt;</code> element using the :first-of-type selector.</p>
+    <div>
+      <p>This is the first paragraph.</p>
+      <p>This is the second paragraph.</p>
+      <p>This is the third paragraph.</p>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Sibling Combinator Examples</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>General Sibling Combinator Examples</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example 1: Selecting sibling elements</h2>
+    <p class="example-description">This example selects and applies styles to all <code>p</code> elements that are siblings of the <code>h1</code> element.</p>
+    <h1>Title</h1>
+    <p>Paragraph 1</p>
+    <h2>Subheading</h2>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+  </div>
+  
+  <div class="example">
+    <h2 class="example-title">Example 2: Selecting sibling elements after a specific element</h2>
+    <p class="example-description">This example selects and applies styles to all <code>p</code> elements that are siblings appearing after the <code>h2</code> element.</p>
+    <h1>Title</h1>
+    <h2>Subheading</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <h2>Another Subheading</h2>
+    <p>Paragraph 3</p>
+  </div>
+  
+</body>
+</html>

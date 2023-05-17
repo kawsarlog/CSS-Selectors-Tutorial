@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attribute Selector Examples</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Attribute Selector Examples</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example 1: Selecting elements with a specific attribute</h2>
+    <p class="example-description">This example selects and applies styles to all elements that have the attribute <code>data-lang</code>.</p>
+    <p data-lang="en">This paragraph has the attribute <code>data-lang</code> set to "en".</p>
+    <p>This paragraph does not have the attribute <code>data-lang</code>.</p>
+  </div>
+  
+  <div class="example">
+    <h2 class="example-title">Example 2: Selecting elements with a specific attribute value</h2>
+    <p class="example-description">This example selects and applies styles to all elements that have the attribute <code>data-lang</code> with the value "fr".</p>
+    <p data-lang="en">This paragraph has the attribute <code>data-lang</code> set to "en".</p>
+    <p data-lang="fr">This paragraph has the attribute <code>data-lang</code> set to "fr".</p>
+  </div>
+  
+  <div class="example">
+    <h2 class="example-title">Example 3: Selecting elements with an attribute value starting with a specific string</h2>
+    <p class="example-description">This example selects and applies styles to all elements that have the attribute <code>class</code> with a value starting with "btn".</p>
+    <button class="btn-primary">Primary Button</button>
+    <button class="btn-secondary">Secondary Button</button>
+    <button class="btn-success">Success Button</button>
+  </div>
+  
+</body>
+</html>

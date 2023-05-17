@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Selector Examples</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Class Selector Examples</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example 1: Selecting elements with a specific class</h2>
+    <p class="example-description">This example selects and applies styles to all elements with the class <code>.highlight</code>.</p>
+    <p class="highlight">This paragraph has the class "highlight".</p>
+    <p>This paragraph does not have the class "highlight".</p>
+  </div>
+  
+  <div class="example">
+    <h2 class="example-title">Example 2: Selecting elements with multiple classes</h2>
+    <p class="example-description">This example selects and applies styles to all elements with both classes <code>.highlight</code> and <code>.text-center</code>.</p>
+    <p class="highlight text-center">This paragraph has both the classes "highlight" and "text-center".</p>
+    <p class="highlight">This paragraph only has the class "highlight".</p>
+  </div>
+  
+  <div class="example">
+    <h2 class="example-title">Example 3: Selecting elements with a specific class within a parent element</h2>
+    <p class="example-description">This example selects and applies styles to elements with the class <code>.highlight</code> that are inside a parent element with the class <code>.container</code>.</p>
+    <div class="container">
+      <p class="highlight">This paragraph is inside a parent element with the class "container" and has the class "highlight".</p>
+      <p class="highlight">This paragraph is also inside a parent element with the class "container" and has the class "highlight".</p>
+    </div>
+    <p class="highlight">This paragraph is not inside a parent element with the class "container".</p>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ID Selector Examples</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>ID Selector Examples</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example 1: Selecting an element with a specific ID</h2>
+    <p class="example-description">This example selects and applies styles to the element with the ID <code>#intro</code>.</p>
+    <p id="intro">This paragraph has the ID "intro".</p>
+    <p>This paragraph does not have the ID "intro".</p>
+  </div>
+  
+  <div class="example">
+    <h2 class="example-title">Example 2: Selecting an element with an ID within a parent element</h2>
+    <p class="example-description">This example selects and applies styles to the element with the ID <code>#subheading</code> that is inside a parent element with the ID <code>#container</code>.</p>
+    <div id="container">
+      <p>This is the parent element with the ID "container".</p>
+      <h2 id="subheading">This heading has the ID "subheading" and is inside the parent element with the ID "container".</h2>
+    </div>
+    <p id="subheading">This heading has the ID "subheading" but is not inside the parent element with the ID "container".</p>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Descendant Combinator Examples</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Descendant Combinator Examples</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example 1: Selecting descendant elements</h2>
+    <p class="example-description">This example selects and applies styles to all <code>p</code> elements that are descendants of the <code>div</code> element.</p>
+    <div>
+      <p>This paragraph is a descendant of the div.</p>
+      <span>This span is not a descendant of the div.</span>
+    </div>
+    <p>This paragraph is not a descendant of the div.</p>
+  </div>
+  
+  <div class="example">
+    <h2 class="example-title">Example 2: Selecting multiple levels of descendant elements</h2>
+    <p class="example-description">This example selects and applies styles to all <code>p</code> elements that are descendants of the <code>div</code> element, regardless of the levels of nesting.</p>
+    <div>
+      <p>This paragraph is a descendant of the div.</p>
+      <div>
+        <p>This paragraph is also a descendant of the div.</p>
+        <span>This span is not a descendant of the div.</span>
+      </div>
+    </div>
+    <p>This paragraph is not a descendant of the div.</p>
+  </div>
+  
+</body>
+</html>

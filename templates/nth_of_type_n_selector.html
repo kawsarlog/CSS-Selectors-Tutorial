@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>:nth-of-type(n) Selector Example</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+    
+    /* Styling for the example elements */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+    }
+    
+    /* Styling for the nth element */
+    .example ul li:nth-of-type(3n) {
+      background-color: #da1616;
+    }
+  </style>
+</head>
+<body>
+  <h1>:nth-of-type(n) Selector Example</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example: Selecting every third <code>&lt;li&gt;</code> element using the :nth-of-type(n) selector</h2>
+    <p class="example-description">This example selects and applies styles to every third <code>&lt;li&gt;</code> element within the <code>&lt;ul&gt;</code> using the :nth-of-type(n) selector.</p>
+    <pre><code>.example ul li:nth-of-type(3n) {
+  background-color: #f5f5f5;
+}</code></pre>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+      <li>Item 6</li>
+    </ul>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comma Operator Examples</title>
+  <style>
+    /* Add some basic styling for clarity */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .example {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .example-title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .example-description {
+      margin-top: 5px;
+    }
+    
+    code {
+      display: inline-block;
+      background-color: #000000;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+      font-size: 16px;
+      color: aliceblue;
+    }
+    
+    /* Styling for the example elements */
+    .example-element {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    /* Styling for elements selected with the comma operator */
+    .example-element.red, .example-element.blue {
+      color: white;
+      background-color: red;
+    }
+    
+    .example-element.green, .example-element.yellow {
+      color: white;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Comma Operator Examples</h1>
+  
+  <div class="example">
+    <h2 class="example-title">Example: Selecting elements with comma-separated selectors</h2>
+    <p class="example-description">This example selects and applies styles to elements using comma-separated selectors to implement an OR operation.</p>
+    <pre><code>.example-element.red, .example-element.blue {
+  color: white;
+  background-color: red;
+}
+
+.example-element.green, .example-element.yellow {
+  color: white;
+  background-color: green;
+}</code></pre>
+    <div class="example-element red">Red Element</div>
+    <div class="example-element blue">Blue Element</div>
+    <div class="example-element green">Green Element</div>
+    <div class="example-element yellow">Yellow Element</div>
+  </div>
+  
+</body>
+</html>
