@@ -1,10 +1,12 @@
+# http://www.cssselectors.xyz/
+
 # CSS Selectors Tutorial and Examples
 
 This repository contains a collection of HTML and CSS files demonstrating various CSS selector rules. Each HTML page focuses on a specific selector rule, providing examples and explanations to help you understand how to target and style elements using CSS selectors.
 
 ## Website
 
-You can also access a live version of these examples on the [CSS Selectors Tutorial website](https://css-tutorial.kawsarlog.repl.co/). The website provides an interactive environment where you can try out the examples and experiment with CSS selectors using the browser's developer tools.
+You can also access a live version of these examples on the [CSS Selectors Tutorial website](http://www.cssselectors.xyz/). The website provides an interactive environment where you can try out the examples and experiment with CSS selectors using the browser's developer tools.
 
 
 ## License
