@@ -1,8 +1,7 @@
 # www.cssselectors.xyz
 
 # CSS Selectors Tutorial and Examples
-
-This repository contains a collection of HTML and CSS files demonstrating various CSS selector rules. Each HTML page focuses on a specific selector rule, providing examples and explanations to help you understand how to target and style elements using CSS selectors.
+📂 This repository contains a collection of HTML and CSS files demonstrating various CSS selector rules. Each HTML page focuses on a specific selector rule, providing examples and explanations to help you understand how to target and style elements using CSS selectors. 🎨📝💡
 
 ## Website
 
